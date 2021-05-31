@@ -1,0 +1,74 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://media/tesoura.png" type="Texture" id=1]
+[ext_resource path="res://media/papel.png" type="Texture" id=2]
+[ext_resource path="res://media/fundo_branco.png" type="Texture" id=3]
+[ext_resource path="res://media/pedra.png" type="Texture" id=4]
+[ext_resource path="res://Main.gd" type="Script" id=5]
+[ext_resource path="res://media/pedra_clique.png" type="Texture" id=6]
+[ext_resource path="res://media/papel_clique.png" type="Texture" id=7]
+[ext_resource path="res://media/tesoura_clique.png" type="Texture" id=8]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="Fundo" type="Sprite" parent="."]
+scale = Vector2( 1920, 1080 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="BotaoPedra" type="TextureButton" parent="."]
+margin_left = 55.1075
+margin_top = 271.66
+margin_right = 567.108
+margin_bottom = 783.66
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotaoPapel" type="TextureButton" parent="."]
+margin_left = 707.287
+margin_top = 271.53
+margin_right = 1219.29
+margin_bottom = 783.53
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotaoTesoura" type="TextureButton" parent="."]
+margin_left = 1352.19
+margin_top = 271.99
+margin_right = 1864.19
+margin_bottom = 783.99
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label1" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 73.311
+margin_top = 109.908
+margin_right = 286.311
+margin_bottom = 123.908
+rect_scale = Vector2( 4, 4 )
+text = "Escolha Pedra, Papel, ou Tesoura:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 74.8748
+margin_top = 900.216
+margin_right = 287.875
+margin_bottom = 914.216
+rect_scale = Vector2( 4, 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
