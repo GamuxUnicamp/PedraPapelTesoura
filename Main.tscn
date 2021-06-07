@@ -1,74 +1,116 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://media/tesoura.png" type="Texture" id=1]
-[ext_resource path="res://media/papel.png" type="Texture" id=2]
-[ext_resource path="res://media/fundo_branco.png" type="Texture" id=3]
-[ext_resource path="res://media/pedra.png" type="Texture" id=4]
 [ext_resource path="res://Main.gd" type="Script" id=5]
-[ext_resource path="res://media/pedra_clique.png" type="Texture" id=6]
-[ext_resource path="res://media/papel_clique.png" type="Texture" id=7]
-[ext_resource path="res://media/tesoura_clique.png" type="Texture" id=8]
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Control"]
 script = ExtResource( 5 )
-
-[node name="Fundo" type="Sprite" parent="."]
-scale = Vector2( 1920, 1080 )
-texture = ExtResource( 3 )
-centered = false
-
-[node name="BotaoPedra" type="TextureButton" parent="."]
-margin_left = 55.1075
-margin_top = 271.66
-margin_right = 567.108
-margin_bottom = 783.66
-texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="BotaoPapel" type="TextureButton" parent="."]
-margin_left = 707.287
-margin_top = 271.53
-margin_right = 1219.29
-margin_bottom = 783.53
-texture_normal = ExtResource( 2 )
-texture_pressed = ExtResource( 7 )
+[node name="Panel" type="Panel" parent="."]
+margin_right = 599.0
+margin_bottom = 603.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="BotaoTesoura" type="TextureButton" parent="."]
-margin_left = 1352.19
-margin_top = 271.99
-margin_right = 1864.19
-margin_bottom = 783.99
-texture_normal = ExtResource( 1 )
-texture_pressed = ExtResource( 8 )
+[node name="BotaoPedra1" type="Button" parent="."]
+margin_left = 29.6588
+margin_top = 166.568
+margin_right = 165.659
+margin_bottom = 229.568
+text = "Pedra"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label1" type="Label" parent="."]
-modulate = Color( 0, 0, 0, 1 )
-margin_left = 73.311
-margin_top = 109.908
-margin_right = 286.311
-margin_bottom = 123.908
-rect_scale = Vector2( 4, 4 )
-text = "Escolha Pedra, Papel, ou Tesoura:"
+[node name="BotaoPapel1" type="Button" parent="."]
+margin_left = 240.932
+margin_top = 166.955
+margin_right = 366.932
+margin_bottom = 229.955
+text = "Papel"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label2" type="Label" parent="."]
-modulate = Color( 0, 0, 0, 1 )
-margin_left = 74.8748
-margin_top = 900.216
-margin_right = 287.875
-margin_bottom = 914.216
-rect_scale = Vector2( 4, 4 )
+[node name="BotaoTesoura1" type="Button" parent="."]
+margin_left = 426.659
+margin_top = 166.0
+margin_right = 569.659
+margin_bottom = 229.0
+text = "Tesoura"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotaoPedra2" type="Button" parent="."]
+margin_left = 25.6588
+margin_top = 308.568
+margin_right = 161.659
+margin_bottom = 371.568
+text = "Pedra"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotaoPapel2" type="Button" parent="."]
+margin_left = 236.932
+margin_top = 308.955
+margin_right = 362.932
+margin_bottom = 371.955
+text = "Papel"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotaoTesoura2" type="Button" parent="."]
+margin_left = 422.659
+margin_top = 308.0
+margin_right = 565.659
+margin_bottom = 371.0
+text = "Tesoura"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelEscolha" type="Label" parent="."]
+margin_left = 45.5717
+margin_top = 51.3674
+margin_right = 123.572
+margin_bottom = 65.3674
+text = "Escolha uma opção para o Jogador 1 e para o Jogador 2:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelJogador1" type="Label" parent="."]
+margin_left = 39.0
+margin_top = 129.0
+margin_right = 101.0
+margin_bottom = 143.0
+text = "Jogador 1: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelJogador2" type="Label" parent="."]
+margin_left = 37.0
+margin_top = 274.0
+margin_right = 99.0
+margin_bottom = 288.0
+text = "Jogador 2: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelVencedor" type="Label" parent="."]
+margin_left = 41.0
+margin_top = 451.0
+margin_right = 105.0
+margin_bottom = 465.0
+text = "Vencedor:"
 __meta__ = {
 "_edit_use_anchors_": false
 }
